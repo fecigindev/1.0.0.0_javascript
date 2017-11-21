@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looping javascript</title>
+</head>
+<body>
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"]; //array list mobil
+var text = ""; //tempat untuk array
+var i;
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";  //<br> untuk baris baru 
+}
+document.getElementById("saya").innerHTML = text; //cari object yang id nya saya
+</script>
+
+<p id="saya">di sini list mobil</p> <!--ni object saya jadi text ini akan berisi list array list mobil -->
+</body>
+</html>
+
+<!-- silahkan copy kode ini ke body HTML
+var cars = ["1", "2", "3", "4", "5", "6"];
+var text = ""; //tempat untuk array
+var i;
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+document.getElementById("saya").innerHTML = text;
+-->
