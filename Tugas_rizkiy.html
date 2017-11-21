@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var nama = prompt("masukan nama anda : ");
+	var alamat = prompt("alamat anda : ");;
+	var pekerjaan = prompt("Pekerjaan anda : ");
+	var motor = prompt("jenis motor : ");
+	var lama = prompt("lama peminjaman motor : ");
+
+	if(lama < 31){
+		document.write("nama anda:  ",nama,"<br />");
+		document.write("alamat anda:  ",alamat,"<br />");
+		document.write("Pekerjaan anda: ",pekerjaan,"<br />");
+		document.write("motor yang di pinjam:  ",motor,"<br />");
+		document.write("lama peminjaman motor:  ",lama,"<br />");
+
+		var harga;
+		if(lama == 1){
+			var normal1;
+			document.write("harga normal total harga : ",harga = 100000,"<br />");
+			
+		}
+		if(lama == 2){
+			document.write("harga normal total harga : ",harga = 150000,"<br />");
+		}
+		if(lama == 3){
+			document.write("harga normal total harga : ",harga = 200000,"<br />");
+		}
+		if(lama == 4){
+			document.write("harga normal total harga : ",harga = 250000,"<br />");
+		}
+
+		if(lama > 5){
+			var bayar = 300000
+			var diskon = 0.10; //diskon 10% silahkan ubah dengan 50% jika mau
+			var hitung_diskon = bayar * diskon;
+			var akhir = bayar - hitung_diskon;
+			document.write("dapat diskon total harga : ",akhir,"<br />");
+		}
+		document.write("Terimakasih");
+		
+	}
+	else{
+		document.write("maaf peminjaman hanya bisa kurang dari 30 hari setelah lebih dari itu <br />");
+		document.write("maka anda harus mengisi data pendaftaran peminjaman lagi  <br />");
+		document.write("Terimakasih atas perkunjungan anda");
+	}
+</script>
+</body>
+</html>
